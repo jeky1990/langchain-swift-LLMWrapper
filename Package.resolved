@@ -73,6 +73,15 @@
       }
     },
     {
+      "identity" : "llama.cpp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ggerganov/llama.cpp/",
+      "state" : {
+        "branch" : "gg/metal-fix-fa-2",
+        "revision" : "a95225cdfd7286f965311790f4e3fa61141b0d78"
+      }
+    },
+    {
       "identity" : "openai-kit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/buhe/openai-kit",
