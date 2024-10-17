@@ -50,6 +50,7 @@ open class SwiftLLMWrapper: ObservableObject {
     @Published public private(set) var output = ""
     @MainActor public func setOutput(to newOutput: consuming String) {
         output = newOutput
+        print("newOutput", output)
     }
     
     private var context: Context!

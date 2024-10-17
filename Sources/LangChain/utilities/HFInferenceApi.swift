@@ -26,7 +26,7 @@ struct HFInferenceApi {
             // it's important to shutdown the httpClient after all requests are done, even if one failed. See: https://github.com/swift-server/async-http-client
             try? httpClient.syncShutdown()
         }
-        var request = HTTPClientRequest(url: "https://api-inference.huggingface.co/pipeline/\(task)/\(repo)")
+        var request = HTTPClientRequest(url: "https://api-inference.huggingface.co/models/\(repo)")
         request.method = .POST
         request.headers.add(name: "Authorization", value: "Bearer \(env["HF_API_KEY"]!)")
         request.headers.add(name: "Content-Type", value: "application/json")
