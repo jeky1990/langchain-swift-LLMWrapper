@@ -303,7 +303,7 @@ open class SwiftLLMWrapper: ObservableObject {
         if !letters.isEmpty { output.yield(found ? String(cString: letters + [0]) : word) }
         return true
     }
-    
+    //borrowing removed
     private func getResponse(from input: String) -> AsyncStream<String> {
         .init { output in Task {
             defer { context = nil }
